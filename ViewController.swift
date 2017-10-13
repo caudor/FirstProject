@@ -4,7 +4,6 @@
 //
 //  Created by Christopher Richardson on 10/12/17.
 //  Copyright © 2017 Chris.Richardson. All rights reserved.
-//  Hello, I am cheese
 
 import UIKit
 
