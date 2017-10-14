@@ -34,18 +34,42 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ad-Wg-19C"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n7j-rQ-3lQ">
+                                <rect key="frame" x="137.5" y="280" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vCs-qP-oKm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpg-wV-gjw">
+                                <rect key="frame" x="137.5" y="220" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="55h-3I-3Kb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gpg-wV-gjw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hut-Ce-MHm"/>
+                            <constraint firstItem="n7j-rQ-3lQ" firstAttribute="top" secondItem="gpg-wV-gjw" secondAttribute="bottom" constant="30" id="OQ6-5J-n5h"/>
                             <constraint firstItem="vsG-lw-9Pn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9R-ia-4U5"/>
                             <constraint firstItem="vsG-lw-9Pn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="hRf-sc-Owy"/>
                             <constraint firstItem="aHh-GD-YFu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nFx-dJ-kd8"/>
+                            <constraint firstItem="vsG-lw-9Pn" firstAttribute="top" secondItem="n7j-rQ-3lQ" secondAttribute="bottom" constant="23" id="q7O-Ex-rbA"/>
+                            <constraint firstItem="n7j-rQ-3lQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v2v-F6-F9w"/>
                             <constraint firstItem="aHh-GD-YFu" firstAttribute="top" secondItem="vsG-lw-9Pn" secondAttribute="bottom" constant="35" id="vek-Jq-pdZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomTextField" destination="n7j-rQ-3lQ" id="hXp-iO-Vih"/>
                         <outlet property="myLabel" destination="vsG-lw-9Pn" id="8ov-hY-zhB"/>
+                        <outlet property="topTextField" destination="gpg-wV-gjw" id="0L1-6d-MhC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
