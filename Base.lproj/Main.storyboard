@@ -28,8 +28,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHh-GD-YFu">
-                                <rect key="frame" x="131.5" y="389" width="113" height="30"/>
-                                <state key="normal" title="Hit me ten times"/>
+                                <rect key="frame" x="128.5" y="389" width="118" height="30"/>
+                                <state key="normal" title="Add the numbers"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ad-Wg-19C"/>
                                 </connections>
