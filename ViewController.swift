@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
     
     @IBAction func buttonTapped(_ sender: Any) {
-        
+        // Added Switch
         let addition = additionSwitch.isOn
         var sum = 0.0
         if addition{
