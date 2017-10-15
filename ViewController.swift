@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     //var buttonCount = 0
     
+    @IBOutlet weak var additionSwitch: UISwitch!
+    
     @IBOutlet weak var bottomTextField: UITextField!
     
     @IBOutlet weak var topTextField: UITextField!
@@ -18,7 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        let addition = false
+        let addition = additionSwitch.isOn
         var sum = 0.0
         if addition{
             sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
