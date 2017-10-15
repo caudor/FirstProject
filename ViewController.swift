@@ -18,11 +18,15 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
-        //myLabel.text = String(sum)
-        myLabel.text = "\(topTextField.text!) +  \(bottomTextField.text!) = \(sum)"
-    
-//String interprelation
+        let addition = false
+        var sum = 0.0
+        if addition{
+            sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) +  \(bottomTextField.text!) = \(sum)"        }
+        else {
+            sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) -  \(bottomTextField.text!) = \(sum)"        }
+        
         
         print(topTextField.text!)
         print(bottomTextField.text!)
